@@ -45,7 +45,7 @@ let colors_name = "monokai"
 
 if has("gui_running")
   let s:vmode      = "gui"
-  let s:background = "#272822"
+  let s:background = "#FFFFFF"
   let s:foreground = "#E8E8E3"
   let s:window     = "#64645e"
   let s:line       = "#383a3e"
@@ -72,7 +72,7 @@ if has("gui_running")
   let s:changebg   = "#5f5f87"
 else
   let s:vmode      = "cterm"
-  let s:background = "234"
+  let s:background = "233"
   let s:foreground = "252"
   let s:window     = "239"
   let s:line       = "236"
@@ -87,7 +87,7 @@ else
   let s:pink       = "197"
   let s:green      = "148"
   let s:aqua       = "81"
-  let s:yellow     = "186"
+  let s:yellow     = "221"
   let s:orange     = "208"
   let s:purple     = "141"
   let s:red        = "196"
@@ -117,7 +117,8 @@ let s:i      = ",italic"
 
 exe "let s:bg_none       = ' ".s:vmode."bg=".s:none      ."'"
 exe "let s:bg_foreground = ' ".s:vmode."bg=".s:foreground."'"
-exe "let s:bg_background = ' ".s:vmode."bg=".s:background."'"
+" modify this line, use s:none to replace s:background, remove background color -- LockonS on github
+exe "let s:bg_background = ' ".s:vmode."bg=".s:none      ."'"
 exe "let s:bg_selection  = ' ".s:vmode."bg=".s:selection ."'"
 exe "let s:bg_line       = ' ".s:vmode."bg=".s:line      ."'"
 exe "let s:bg_linenr     = ' ".s:vmode."bg=".s:linenr    ."'"
